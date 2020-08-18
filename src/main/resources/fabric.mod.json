@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "mtca",
+  "version": "${version}",
+
+  "name": "More Totems Curios Addon",
+  "description": "This just adds compat between More Totems of Undying and Curios API",
+  "authors": [
+    "AzureDoomC"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/AzureDoom/More-Totems-Curios-Addon/"
+  },
+
+  "license": "MIT",
+  "icon": "assets/mtca/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "mod.azure.mtca.MoreTotemsCuriosAddon"
+    ]
+  },
+  "mixins": [
+    "mtca.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}

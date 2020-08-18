@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "mod.azure.mtca.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+ 	 "LivingEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
