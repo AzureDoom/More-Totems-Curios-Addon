@@ -27,7 +27,8 @@ import net.minecraft.util.registry.RegistryKey;
 import net.minecraft.world.World;
 import top.theillusivec4.curios.api.CuriosApi;
 
-/*This is a recreation of MoreTotems Mixin but to allow Curios slots https://github.com/HyperPigeon/MoreTotems/blob/master/src/main/java/net/hyper_pigeon/moretotems/mixin/LivingEntityMixin.java*/
+/*This is a recreation of MoreTotems Mixin but to allow Curios slots 
+ * https://github.com/HyperPigeon/MoreTotems/blob/master/src/main/java/net/hyper_pigeon/moretotems/mixin/LivingEntityMixin.java*/
 @Mixin(LivingEntity.class)
 public abstract class LivingEntityMixin extends Entity {
 
@@ -178,7 +179,7 @@ public abstract class LivingEntityMixin extends Entity {
 			ci.setReturnValue(false);
 		} else {
 			ItemStack stack = CuriosApi.getCuriosHelper()
-					.findEquippedCurio(MoreTotemsMod.EXPLOSIVE_TOTEM_OF_UNDYING, livingEntity)
+					.findEquippedCurio(MoreTotemsMod.GHASTLY_TOTEM_OF_UNDYING, livingEntity)
 					.map(ImmutableTriple::getRight).orElse(ItemStack.EMPTY);
 
 			if (!stack.isEmpty()) {
